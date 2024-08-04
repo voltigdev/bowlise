@@ -21,11 +21,9 @@
     "node": ">=18"
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix"
-    ],
-    "packages/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix"
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "turbo lint --fix"
     ],
     "*.json": [
       "prettier --write"
