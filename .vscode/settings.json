@@ -1,7 +1,49 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": false,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "eslint.lintTask.enable": true,
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
-  ]
+  ],
+  "files.associations": {
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact"
+  },
+  "files.autoSave": "onFocusChange",
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "node_modules": true
+  },
+  "git.decorations.enabled": true,
+  "gitlens.codeLens.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "prettier.requireConfig": true,
+  "search.exclude": {
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/.DS_Store": true,
+    "**/.git": true
+  },
+  "typescript.suggest.autoImports": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.validate.enable": true,
+  "workbench.colorCustomizations": {
+    "editorIndentGuide.activeBackground1": "#FF9800",
+    "editorIndentGuide.background1": "#FFFFFF"
+  }
 }

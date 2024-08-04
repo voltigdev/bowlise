@@ -10,6 +10,10 @@ type Role = {
    */
   handle: string
   /**
+   * An optional name for the role.
+   */
+  name?: string | undefined
+  /**
    * An optional description of the role.
    */
   description?: string | undefined

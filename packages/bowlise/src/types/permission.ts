@@ -10,9 +10,9 @@ type Permission = {
    */
   handle: string
   /**
-   * The name of the permission.
+   * An optional name for the permission.
    */
-  name: string
+  name?: string | undefined
   /**
    * An optional description of the permission.
    */
