@@ -17,11 +17,11 @@
   "devDependencies": {
     "@bowlise/eslint-config": "workspace:*",
     "@bowlise/typescript-config": "workspace:*",
-    "typescript": "^5",
+    "typescript": "catalog:",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
+    "eslint": "catalog:",
     "eslint-config-next": "15.0.0-rc.0"
   }
 }

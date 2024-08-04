@@ -14,7 +14,7 @@ catalogs:
       version: 3.3.3
     typescript:
       specifier: ^5.5.4
-      version: 5.5.4
+      version: 5.3.3
 
 importers:
 
@@ -67,13 +67,13 @@ importers:
         specifier: ^18
         version: 18.2.19
       eslint:
-        specifier: ^8
+        specifier: 'catalog:'
         version: 8.57.0
       eslint-config-next:
         specifier: 15.0.0-rc.0
         version: 15.0.0-rc.0(eslint@8.57.0)(typescript@5.3.3)
       typescript:
-        specifier: ^5
+        specifier: 'catalog:'
         version: 5.3.3
 
   packages/bowlise:
@@ -142,6 +142,9 @@ importers:
       '@bowlise/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
+      '@next/eslint-plugin-next':
+        specifier: ^14.2.5
+        version: 14.2.5
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.1.0
         version: 7.1.0(@typescript-eslint/parser@7.1.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
@@ -471,6 +474,9 @@ packages:
 
   '@next/env@15.0.0-rc.0':
     resolution: {integrity: sha512-6W0ndQvHR9sXcqcKeR/inD2UTRCs9+VkSK3lfaGmEuZs7EjwwXMO2BPYjz9oBrtfPL3xuTjtXsHKSsalYQ5l1Q==}
+
+  '@next/eslint-plugin-next@14.2.5':
+    resolution: {integrity: sha512-LY3btOpPh+OTIpviNojDpUdIbHW9j0JBYBjsIp8IxtDFfYFyORvw3yNq6N231FVqQA7n7lwaf7xHbVJlA1ED7g==}
 
   '@next/eslint-plugin-next@15.0.0-rc.0':
     resolution: {integrity: sha512-/rQXrN47qxlFHtZg77LdcCYbL54ogQuLeqIGV/6HMGnZH8iL81XEFOITO8GZjOukR5i3BbwyfrsmIqFl/scg+w==}
@@ -2892,6 +2898,10 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.4.15
 
   '@next/env@15.0.0-rc.0': {}
+
+  '@next/eslint-plugin-next@14.2.5':
+    dependencies:
+      glob: 10.3.10
 
   '@next/eslint-plugin-next@15.0.0-rc.0':
     dependencies:

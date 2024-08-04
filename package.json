@@ -22,8 +22,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "prettier --write",
-      "turbo lint --fix"
+      "prettier --write"
     ],
     "*.json": [
       "prettier --write"

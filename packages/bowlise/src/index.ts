@@ -1,4 +1,7 @@
-import type { Output } from "./hello";
-import { helloWorld } from "./hello"
+export type Output = {
+  name: string
+}
 
-const output: Output = helloWorld("TypeScript")
+export function helloWorld(name: string): Output {
+  return { name }
+}
