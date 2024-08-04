@@ -2,7 +2,8 @@ import type TargetType from "~types/target-type"
 
 /**
  * Represents access control information for a subject and target.
- * This defines the relationship between a subject, a target, and the role assigned.
+ * This defines the relationship between a subject, a target, and the role
+ * assigned.
  */
 export type AccessControl = {
   /**
@@ -21,6 +22,23 @@ export type AccessControl = {
    * The handle of the role assigned to the subject for the target.
    */
   roleHandle: string
+  /**
+   * Whether the access control entry is deleted.
+   */
+  isDeleted?: boolean | undefined
+  /**
+   * The date and time when the access control entry was deleted
+   * if applicable).
+   */
+  deletedAt?: Date | undefined
+  /**
+   * The date and time when the access control entry was created.
+   */
+  createdAt: Date
+  /**
+   * The date and time when the access control entry was last updated.
+   */
+  updatedAt: Date
 }
 
 /**
@@ -78,4 +96,8 @@ export type DeleteAccessControlParams = {
    * The unique identifier of the target.
    */
   targetId: string
+  /**
+   * Whether to perform a soft delete or hard delete.
+   */
+  softDelete?: boolean | undefined
 }
