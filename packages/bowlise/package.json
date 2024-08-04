@@ -1,0 +1,20 @@
+{
+  "name": "@bowlise/bowlise",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc build",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "git clean -xdf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@bowlise/eslint-config": "workspace:*",
+    "@bowlise/prettier-config": "workspace:*",
+    "@bowlise/typescript-config": "workspace:*",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "typescript": "catalog:"
+  },
+  "prettier": "@bowlise/prettier-config"
+}
