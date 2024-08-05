@@ -5,9 +5,10 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
-      "~types/*": ["./src/types/*"]
+        "~types/*": ["./src/types/*"],
+        "~test/*": ["./tests/*"]
     }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  "include": ["src", "tests"],
+  "exclude": ["node_modules", "dist"]
 }

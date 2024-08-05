@@ -33,6 +33,7 @@ module.exports = {
     ".*.js",
     "node_modules/",
     "dist/",
+    "tests/*.test.ts",
   ],
   overrides: [
     {
