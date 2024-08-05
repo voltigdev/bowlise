@@ -3,18 +3,16 @@ import type {
   CreateAccessControlParams,
   DeleteAccessControlParams,
   UpdateAccessControlParams,
-} from "~/types/access-control"
+} from "~types/access-control"
 import type {
-  BulkSubjectHasPermissionParams,
-  BulkSubjectHasRoleParams,
   BulkSubjectTargetParams,
   SubjectHasPermissionParams,
   SubjectHasRoleParams,
   SubjectTargetParams,
-} from "~/types/params"
-import type Permission from "~/types/permission"
-import type { BulkCheckResult } from "~/types/results"
-import type Role from "~/types/role"
+} from "~types/params"
+import type Permission from "~types/permission"
+import type { BulkCheckResult } from "~types/results"
+import type Role from "~types/role"
 
 /**
  * Interface for the Access Control Service.
@@ -110,30 +108,6 @@ type AccessControlService = {
   bulkListPermissionsForSubject(
     params: BulkSubjectTargetParams,
   ): Promise<BulkCheckResult<Permission>>
-
-  /**
-   * Performs a bulk check if a subject has a specific role across multiple
-   * targets.
-   * @param params - The parameters identifying the subject, role, and multiple
-   * targets.
-   * @returns A promise that resolves to a BulkCheckResult object mapping target
-   * IDs to boolean values or errors.
-   */
-  bulkSubjectHasRole(
-    params: BulkSubjectHasRoleParams,
-  ): Promise<BulkCheckResult<boolean>>
-
-  /**
-   * Performs a bulk check if a subject has a specific permission across
-   * multiple targets.
-   * @param params - The parameters identifying the subject, permission, and
-   * multiple targets.
-   * @returns A promise that resolves to a BulkCheckResult object mapping
-   * target IDs to boolean values or errors.
-   */
-  bulkSubjectHasPermission(
-    params: BulkSubjectHasPermissionParams,
-  ): Promise<BulkCheckResult<boolean>>
 }
 
 export default AccessControlService
