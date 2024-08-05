@@ -10,9 +10,9 @@ import type {
   Permission,
   Role,
   SubjectTargetParams,
-} from "../types"
+} from "../src/types"
 
-import Bowlise from "../index"
+import Bowlise from "../src/index"
 
 const mockPermissions: Permission[] = [
   {
