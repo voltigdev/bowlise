@@ -1,7 +1,9 @@
 import type { PlopTypes } from "@turbo/gen";
 
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
-  plop.setGenerator("Create another bowlise adapter", {
+  plop.setGenerator("Add adapter", {
+    description:
+      "This generator creates a new database adapter package for bowlise.",
     prompts: [
       {
         type: "input",
