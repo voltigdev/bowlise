@@ -1,4 +1,4 @@
-import type TargetType from "~types/target-type"
+import type TargetType from "~/types/target-type"
 
 /**
  * Represents a permission associated with a role.

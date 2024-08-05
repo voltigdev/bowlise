@@ -3,7 +3,7 @@ import type {
   CreateAccessControlParams,
   DeleteAccessControlParams,
   UpdateAccessControlParams,
-} from "~types/access-control"
+} from "~/types/access-control"
 import type {
   BulkSubjectHasPermissionParams,
   BulkSubjectHasRoleParams,
@@ -11,10 +11,10 @@ import type {
   SubjectHasPermissionParams,
   SubjectHasRoleParams,
   SubjectTargetParams,
-} from "~types/params"
-import type Permission from "~types/permission"
-import type { BulkCheckResult } from "~types/results"
-import type Role from "~types/role"
+} from "~/types/params"
+import type Permission from "~/types/permission"
+import type { BulkCheckResult } from "~/types/results"
+import type Role from "~/types/role"
 
 /**
  * Interface for the Access Control Service.
