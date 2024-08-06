@@ -19,9 +19,9 @@ export type AccessControl = {
    */
   targetType: TargetType
   /**
-   * The handle of the role assigned to the subject for the target.
+   * The handles for roles assigned to the subject for the target.
    */
-  roleHandle: string
+  roleHandles: [string]
   /**
    * Whether the access control entry is deleted.
    */

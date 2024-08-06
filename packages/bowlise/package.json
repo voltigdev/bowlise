@@ -2,8 +2,12 @@
   "name": "@bowlise/bowlise",
   "version": "1.0.0",
   "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc build",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
     "lint": "eslint . --max-warnings 0",
     "test": "vitest",
     "clean": "git clean -xdf node_modules",
@@ -15,6 +19,7 @@
     "@bowlise/typescript-config": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
+    "tsup": "^8.2.4",
     "typescript": "catalog:",
     "vitest": "catalog:"
   },
