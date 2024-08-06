@@ -1,10 +1,10 @@
-import type AccessControlService from "./access-control-service"
 import type {
   AccessControl,
   CreateAccessControlParams,
   DeleteAccessControlParams,
   UpdateAccessControlParams,
 } from "~/types/access-control"
+import type AccessControlService from "~/types/access-control-service"
 import type {
   BulkSubjectHasPermissionParams,
   BulkSubjectHasRoleParams,

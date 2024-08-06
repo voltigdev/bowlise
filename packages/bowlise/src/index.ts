@@ -411,3 +411,20 @@ export default class Bowlise {
     }, {} as BulkCheckResult<boolean>)
   }
 }
+
+export type {
+  AccessControl,
+  AccessControlService,
+  BulkCheckResult,
+  BulkSubjectHasPermissionParams,
+  BulkSubjectHasRoleParams,
+  BulkSubjectTargetParams,
+  CreateAccessControlParams,
+  DeleteAccessControlParams,
+  Permission,
+  Role,
+  SubjectHasPermissionParams,
+  SubjectHasRoleParams,
+  SubjectTargetParams,
+  UpdateAccessControlParams,
+}
